@@ -10,22 +10,38 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="canonical" href="https://www.smashngrab-burgers.com/">
   <meta property="og:site_name" content="Smash &amp; Grab Burgers">
+  <meta property="og:title" content="Smash &amp; Grab Burgers | Westfield, IN">
+  <meta property="og:url" content="https://www.smashngrab-burgers.com/">
+  <meta property="og:type" content="website">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Smash & Grab Burgers",
-      "alternateName": "Smash & Grab Burgers: Crispy Edges & Bold Flavor",
-      "description": "Hand-crafted smash burgers, crispy fries, and house-sauced wings located inside the Westfield Collective, just one mile south of the Droplight Grand Park Sports Campus.",
-      "url": "https://www.smashngrab-burgers.com/",
-      "telephone": "+1-317-648-5424",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "750 E 181st St",
-        "addressLocality": "Westfield",
-        "addressRegion": "IN",
-        "postalCode": "46074"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.smashngrab-burgers.com/#website",
+          "name": "Smash & Grab Burgers",
+          "alternateName": "Smash & Grab Burgers: Crispy Edges & Bold Flavor",
+          "url": "https://www.smashngrab-burgers.com/"
+        },
+        {
+          "@type": "Restaurant",
+          "@id": "https://www.smashngrab-burgers.com/#restaurant",
+          "name": "Smash & Grab Burgers",
+          "description": "Hand-crafted smash burgers, crispy fries, and house-sauced wings located inside the Westfield Collective, just one mile south of the Droplight Grand Park Sports Campus.",
+          "url": "https://www.smashngrab-burgers.com/",
+          "telephone": "+1-317-648-5424",
+          "servesCuisine": "Burgers",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "750 E 181st St",
+            "addressLocality": "Westfield",
+            "addressRegion": "IN",
+            "postalCode": "46074",
+            "addressCountry": "US"
+          }
+        }
+      ]
     }
   </script>
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5ZF3VC8J"></script>
@@ -39,8 +55,8 @@
 
   <!-- Top Navigation Header -->
   <header class="top">
-    <a href="#home" class="brand" aria-label="Smash &amp; Grab Burgers Home">
-      <img src="images/logo.webp" alt="Smash &amp; Grab Burgers Logo" width="200" height="50">
+    <a href="/" class="brand" aria-label="Smash &amp; Grab Burgers Home">
+      <img src="images/logo.webp" alt="Smash &amp; Grab Burgers" width="200" height="50">
     </a>
     <nav aria-label="Main Navigation">
       <a href="#menu">MENU</a>
