@@ -33,7 +33,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a {
@@ -961,8 +961,12 @@ button {
   }
 
   .filters {
+    position: sticky;
+    top: var(--header-height, 106px);
+    z-index: 850;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     margin-left: -4.75%;
     margin-right: -4.75%;
