@@ -1,0 +1,145 @@
+/* =========================================
+   CLEAN & CENTERED SITE FOOTER
+   (Append to or merge into css/styles.css)
+   ========================================= */
+.site-footer {
+  background: #171513;
+  color: #f6efe3;
+  padding: 56px 24px 36px;
+  border-top: 3px solid #f25c05;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-brand img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  margin: 0;
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f25c05;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin: 4px 0;
+}
+
+.footer-links a {
+  color: #f6efe3;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f25c05;
+}
+
+.sibling-concepts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.concepts-label {
+  color: #b5aca2;
+  font-weight: 600;
+}
+
+.concept-link {
+  color: #f6efe3;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(242, 92, 5, 0.14);
+  border: 1px solid rgba(242, 92, 5, 0.35);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.concept-link:hover {
+  background: #f25c05;
+  color: #171513;
+  border-color: #f25c05;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.legal-links a {
+  color: #b5aca2;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+  color: #f6efe3;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #9e958b;
+}
+
+@media (max-width: 640px) {
+  .sibling-concepts {
+    border-radius: 14px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

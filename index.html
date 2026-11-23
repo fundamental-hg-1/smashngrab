@@ -10,13 +10,14 @@
     gtag('js', new Date());
   </script>
   <meta name="theme-color" content="#171513">
-  <meta name="description" content="Smash &amp; Grab Burgers at Westfield Collective, 750 E 181st St, Westfield, IN 46074. Family-owned smash burgers, crispy fries, and house-sauced wings.">
-  <title>Smash &amp; Grab Burgers | Westfield, IN</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Smash &amp; Grab Burgers at Westfield Collective (750 E 181st St, Westfield, IN 46074), 1 mile south of Droplight Grand Park Sports Campus. Family-owned smash burgers, crispy fries, and house-sauced wings.">
+  <title>Smash &amp; Grab Burgers | Westfield, IN | Near Grand Park</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="canonical" href="https://www.smashngrab-burgers.com/">
   <meta property="og:site_name" content="Smash &amp; Grab Burgers">
-  <meta property="og:title" content="Smash &amp; Grab Burgers | Westfield, IN">
+  <meta property="og:title" content="Smash &amp; Grab Burgers | Westfield, IN | Near Grand Park">
+  <meta property="og:description" content="Smash &amp; Grab Burgers at Westfield Collective (750 E 181st St, Westfield, IN 46074), 1 mile south of Droplight Grand Park Sports Campus. Family-owned smash burgers, crispy fries, and house-sauced wings.">
   <meta property="og:url" content="https://www.smashngrab-burgers.com/">
   <meta property="og:type" content="website">
   <script type="application/ld+json">
@@ -64,7 +65,10 @@
       <a href="#visit">VISIT</a>
       <a href="blog/index.html">BLOG</a>
     </nav>
-    <button type="button" class="button small order-trigger">ORDER ONLINE</button>
+    <div class="header-order-group">
+      <a href="https://order.toasttab.com/online/smash-grab-westfield" target="_blank" rel="noopener noreferrer" class="button small order-direct-link" aria-label="Order Online via Toast (opens in new tab)" title="Order Online via Toast">ORDER ONLINE</a>
+      <span class="order-microcopy-header">Order via Toast</span>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -136,9 +140,11 @@
   <section class="order">
     <span class="category">READY TO EAT?</span>
     <h2>ORDER ONLINE FOR <span class="orange">PICKUP</span></h2>
-    <p>Skip the wait and order ahead. Click below to place your order directly through our secure ordering partner.</p>
-    <button type="button" class="button order-trigger">START YOUR ORDER NOW</button>
-    <small>Secure checkout powered by Westfield Collective ordering portal.</small>
+    <p>Skip the wait and order ahead. Jump straight into our Toast ordering portal—fresh smashed to order inside Westfield Collective.</p>
+    <div class="order-cta-stack">
+      <a href="https://order.toasttab.com/online/smash-grab-westfield" target="_blank" rel="noopener noreferrer" class="button order-direct-link" aria-label="Order via Toast (opens in new tab)">ORDER VIA TOAST &rarr;</a>
+      <span class="order-microcopy-block">Direct checkout via Toast Online Ordering &bull; No extra steps</span>
+    </div>
   </section>
 
   <!-- Visit & Contact Section -->
@@ -188,14 +194,14 @@
         <a href="#story">STORY</a>
         <a href="#visit">VISIT</a>
         <a href="blog/index.html">BLOG</a>
-        <a href="#home" class="order-trigger">ORDER ONLINE</a>
+        <a href="https://order.toasttab.com/online/smash-grab-westfield" target="_blank" rel="noopener noreferrer" title="Order via Toast">ORDER ONLINE</a>
       </nav>
 
       <div class="sibling-concepts">
         <span class="concepts-label">Explore our other concepts:</span>
-        <a href="https://www.pisocietypizza.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Pi Society Pizza">Pi Society Pizza</a>
-        <a href="https://www.taco-heist.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Taco Heist">Taco Heist</a>
-        <a href="https://www.bowloutrn.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Bowl Out Rice and Noodles">Bowl Out Rice and Noodles</a>
+        <a href="https://www.pisocietypizza.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Pi Society Pizza">Pi Society Pizza <span class="concept-location">(Westfield, IN)</span></a>
+        <a href="https://www.taco-heist.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Taco Heist">Taco Heist <span class="concept-location">(Westfield, IN)</span></a>
+        <a href="https://www.bowloutrn.com" target="_blank" rel="noopener noreferrer" class="concept-link" title="Bowl Out Rice and Noodles">Bowl Out Rice and Noodles <span class="concept-location">(Liberty Township, OH)</span></a>
       </div>
 
       <div class="legal-links">
@@ -209,19 +215,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- External Redirect Popup Modal -->
-  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
-    <div class="modal-box">
-      <span class="modal-badge">SECURE PORTAL</span>
-      <h3 id="orderModalTitle">REDIRECTING TO ORDER</h3>
-      <p>You are now being redirected to our secure online ordering partner at Westfield Collective.</p>
-      <div class="modal-actions">
-        <button type="button" class="button small" id="proceedBtn">CONTINUE</button>
-        <button type="button" class="button small button-muted" id="cancelBtn">CANCEL</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Scripts -->
   <script defer src="js/menu-data.js"></script>
